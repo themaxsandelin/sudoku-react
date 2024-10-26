@@ -1,12 +1,15 @@
 // Components
 import { Button } from '@/components/ui/button';
+import IconTrash from '@/components/IconTrash/IconTrash';
+
 
 interface NumberKeyboardProps {
   selectedNumber: number | null;
   onNumberClick: (number: number) => void;
+  onClearClick: () => void;
 }
 
-export default function NumberKeyboard({ selectedNumber, onNumberClick }: NumberKeyboardProps) {
+export default function NumberKeyboard({ selectedNumber, onNumberClick, onClearClick }: NumberKeyboardProps) {
   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   return (
@@ -21,6 +24,9 @@ export default function NumberKeyboard({ selectedNumber, onNumberClick }: Number
           {number}
         </Button>
       ))}
+      <Button size="sm" variant="outline" className="text-red-500" onClick={onClearClick}>
+        <IconTrash />
+      </Button>
     </div>
   );
 }
