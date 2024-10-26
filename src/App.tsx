@@ -9,15 +9,36 @@ import NumberKeyboard from '@/components/NumberKeyboard/NumberKeyboard';
 import { GameState, SelectedSquare } from '@/types';
 
 const EMPTY_GAME_STATE: GameState = [
-  [null, null, null, null, null, null, null, null, null],
-  [null, null, null, null, null, null, null, null, null],
-  [null, null, null, null, null, null, null, null, null],
-  [null, null, null, null, null, null, null, null, null],
-  [null, null, null, null, null, null, null, null, null],
-  [null, null, null, null, null, null, null, null, null],
-  [null, null, null, null, null, null, null, null, null],
-  [null, null, null, null, null, null, null, null, null],
-  [null, null, null, null, null, null, null, null, null],
+  [
+    null, null, null,
+    null, null, null,
+    null, null, null
+  ],
+  [
+    null, null, null,
+    null, null, null,
+    null, null, null
+  ],
+  [
+    null, null, null,
+    null, null, null,
+    null, null, null
+  ],
+  [
+    null, null, null,
+    null, null, null,
+    null, null, null
+  ],
+  [
+    null, null, null,
+    null, null, null,
+    null, null, null
+  ],
+  [
+    null, null, null,
+    null, null, null,
+    null, null, null
+  ],
 ];
 
 function App() {
